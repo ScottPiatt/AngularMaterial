@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>This is made with Angular Material</title>
+    <link rel="stylesheet" href="material.css">
+    <link rel="stylesheet" href="tab.css" >
+  </head>
+  <body ng-controller="MainController" layout="column">
+    <md-toolbar layout="row" layout-align= "center center">
+      <div>
+        <strong>
+          <h2>Angular toolbar</h2>
+        </strong>
+      </div>
+
+    </md-toolbar>
+    <div layout="row" flex>
+      <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" class="md-whiteframe-2dp" md-component-id="left">
+        Side Nav
+      </md-sidenav>
+    <div ng-cloak>
+        <md-content>
+          <md-tabs md-dynamic-height md-border-bottom>
+            <md-tab label="one">
+              <md-content class="md-padding">
+                <h1 class="md-display-2">Tab One</h1>
+                <p>
+                  The content for the first tab will go here.
+                </p>
+                <strong><p>If you scale the size of the screen down you will notice the material will adjust to the size and we used $mdMedia with the 'gt-sm' value to shink the side nav.</p></strong>
+              </md-content>
+            </md-tab>
+            <md-tab label="two">
+              <md-content class="md-padding">
+                <h1 class="md-display-2">Tab Two</h1>
+                <p>The main content for the second tab will go here.</p>
+                <p>We will be puting more angular material design here.</p>
+              </md-content>
+            </md-tab>
+            <md-tab label="three">
+              <md-content class="md-padding">
+                <h1 class="md-display-2">Tab Three</h1>
+                <p>More content in tab three.</p>
+              </md-content>
+            </md-tab>
+          </md-tabs>
+        </md-content>
+      </div>
+
+    </md-content>
+
+
+
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+  <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
